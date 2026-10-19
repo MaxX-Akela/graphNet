@@ -17,7 +17,7 @@ class DPGUnitTest(unittest.TestCase):
         ThemeManager._item_themes.clear()
         cls.parent = "Tests"
         cls.window = dpg.add_window(tag=cls.parent)
-        ThemeManager.load_themes("Tests/themes.json")
+        ThemeManager.load_themes("Assets/themes.json")
         return super().setUpClass()
     
 
