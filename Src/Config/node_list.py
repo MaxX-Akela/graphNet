@@ -53,7 +53,8 @@ node_list = {
                         "y_train": Parameter(AttrType.OUTPUT, ANode[DataNode]),
                         "X_test": Parameter(AttrType.OUTPUT, ANode[DataNode]),
                         "y_test": Parameter(AttrType.OUTPUT, ANode[DataNode]),
-                        "shape": Parameter(AttrType.OUTPUT, ASequence[AInteger, AInteger, AInteger])
+                        "shape": Parameter(AttrType.OUTPUT, ASequence[AInteger, AInteger, AInteger],
+                                           backfield=DatasetNode.shape)
                         },
                 input=False,
                 output=False
