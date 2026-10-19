@@ -109,7 +109,7 @@ node_list = {
                 node_type= LayerNode,
                 logic = LayerNode.layer(layers.Dropout),
                 annotations = {
-                        "rate": Parameter(AttrType.INPUT, AFloat, default=0.8),
+                        "rate": Parameter(AttrType.INPUT, AFloat, default=0.2),
                     },
                 input=LayerNode
             ),
