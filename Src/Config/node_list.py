@@ -236,7 +236,7 @@ node_list = {
                 logic = LayerNode.layer(layers.MaxPooling1D),
                 annotations = {
                         "pool_size": Parameter(AttrType.INPUT, AInteger, default=2),
-                        "strides": Parameter(AttrType.INPUT, AInteger, default=1),
+                        "strides": Parameter(AttrType.INPUT, AInteger, default=2),
                         "padding": Parameter(AttrType.INPUT, AEnum[Padding]),
                     },
                 input=LayerNode
@@ -247,7 +247,7 @@ node_list = {
                 logic = LayerNode.layer(layers.MaxPooling2D),
                 annotations = {
                         "pool_size": Parameter(AttrType.INPUT, ASequence[AInteger, AInteger], default=(2,2)),
-                        "strides": Parameter(AttrType.INPUT, AInteger, default=1),
+                        "strides": Parameter(AttrType.INPUT, ASequence[AInteger, AInteger], default=(2,2)),
                         "padding": Parameter(AttrType.INPUT, AEnum[Padding]),
                     },
                 input=LayerNode
@@ -258,7 +258,7 @@ node_list = {
                 logic = LayerNode.layer(layers.MaxPooling3D),
                 annotations = {
                         "pool_size": Parameter(AttrType.INPUT, ASequence[AInteger, AInteger, AInteger], default=(2,2,2)),
-                        "strides": Parameter(AttrType.INPUT, AInteger, default=1),
+                        "strides": Parameter(AttrType.INPUT, ASequence[AInteger, AInteger, AInteger], default=(2,2,2)),
                         "padding": Parameter(AttrType.INPUT, AEnum[Padding]),
                     },
                 input=LayerNode
@@ -269,7 +269,7 @@ node_list = {
                 logic = LayerNode.layer(layers.AveragePooling1D),
                 annotations = {
                         "pool_size": Parameter(AttrType.INPUT, AInteger, default=2),
-                        "strides": Parameter(AttrType.INPUT, AInteger, default=1),
+                        "strides": Parameter(AttrType.INPUT, AInteger, default=2),
                         "padding": Parameter(AttrType.INPUT, AEnum[Padding]),
                     },
                 input=LayerNode
@@ -280,7 +280,7 @@ node_list = {
                 logic = LayerNode.layer(layers.AveragePooling2D),
                 annotations = {
                         "pool_size": Parameter(AttrType.INPUT, ASequence[AInteger, AInteger], default=(2,2)),
-                        "strides": Parameter(AttrType.INPUT, AInteger, default=1),
+                        "strides": Parameter(AttrType.INPUT, ASequence[AInteger, AInteger], default=(2,2)),
                         "padding": Parameter(AttrType.INPUT, AEnum[Padding]),
                     },
                 input=LayerNode
@@ -291,7 +291,7 @@ node_list = {
                 logic = LayerNode.layer(layers.AveragePooling3D),
                 annotations = {
                         "pool_size": Parameter(AttrType.INPUT, ASequence[AInteger, AInteger, AInteger], default=(2,2,2)),
-                        "strides": Parameter(AttrType.INPUT, AInteger, default=1),
+                        "strides": Parameter(AttrType.INPUT, ASequence[AInteger, AInteger, AInteger], default=(2,2,2)),
                         "padding": Parameter(AttrType.INPUT, AEnum[Padding]),
                     },
                 input=LayerNode
