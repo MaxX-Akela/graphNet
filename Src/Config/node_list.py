@@ -38,7 +38,8 @@ node_list = {
                 annotations = {
                         "files": Parameter(AttrType.INPUT, AString),
                         "color_mode": Parameter(AttrType.INPUT, AEnum[ColorMode]),
-                        "shape": Parameter(AttrType.OUTPUT, ASequence[AInteger, AInteger, AInteger])
+                        "shape": Parameter(AttrType.OUTPUT, ASequence[AInteger, AInteger, AInteger],
+                                           backfield=ShapeNode.shape)
                         },
                 input=False,
                 output=DataNode
